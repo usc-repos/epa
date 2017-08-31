@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:id="@+id/layout"
+        android:layout_height="match_parent"
+        android:scrollbars="horizontal|vertical"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dip"
+        android:scrollbarStyle="outsideInset"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/DescripcionActividadTipo1"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="Select the correct option" />
+
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="220dp"
+                android:id="@+id/ImagenActividadTipo1"
+                android:src="@mipmap/ic_launcher"
+                android:layout_below="@+id/DescripcionActividadTipo1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/PreguntaActividadTipo1"
+                android:text="gsdgfsdg"
+                android:textStyle="bold"
+                android:textColor="#060606"
+                android:layout_below="@+id/ImagenActividadTipo1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/Opcion1ActividadTipo1"
+                android:background="@drawable/btn_selector"
+                android:textStyle="bold"
+                android:layout_below="@+id/PreguntaActividadTipo1"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp" />
+
+            <Button
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/Opcion2ActividadTipo1"
+                android:background="@drawable/btn_selector"
+                android:layout_below="@+id/Opcion1ActividadTipo1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/Opcion3ActividadTipo1"
+                android:layout_below="@+id/Opcion2ActividadTipo1"
+                android:layout_alignLeft="@+id/Opcion2ActividadTipo1"
+                android:layout_alignStart="@+id/Opcion2ActividadTipo1"
+                android:background="@drawable/btn_selector"
+                android:layout_alignRight="@+id/Opcion2ActividadTipo1"
+                android:layout_alignEnd="@+id/Opcion2ActividadTipo1" />
+
+            <Button
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/Opcion4ActividadTipo1"
+                android:background="@drawable/btn_selector"
+                android:layout_below="@+id/Opcion3ActividadTipo1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+        </RelativeLayout>
+
+        </ScrollView>
+
+</RelativeLayout>
